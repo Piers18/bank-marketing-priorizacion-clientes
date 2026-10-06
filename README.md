@@ -2,7 +2,10 @@
 
 Trabajo Parcial (TP1), semana 7, Data Mining Tools (CC209). Universidad Peruana de Ciencias Aplicadas.
 
-**Integrantes:** completar con los nombres del grupo antes de la entrega.
+**Integrantes:**
+
+- Aguilar Anticona, Piero Antonio (u202419995)
+- Chumbiauca Camac, Humberto Aesio (u202110619)
 
 ## Problema y datos
 
