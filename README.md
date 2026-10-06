@@ -16,7 +16,7 @@ El notebook compara un clasificador trivial, una regla basada en `poutcome` y tr
 ## Estructura
 
 ```text
-dataMiningFinal/
+bank-marketing-priorizacion-clientes/
 ├── 01_tp1_eda_preparacion_modelado.ipynb  # análisis y resultados ejecutados
 ├── bank-additional-full.csv               # datos originales
 ├── requirements.txt
@@ -47,4 +47,4 @@ La validación cruzada, los modelos de árboles y la importancia por permutació
 
 El notebook documenta el problema, diccionario de variables, calidad y preparación, EDA con interpretación, separación 70/15/15, pipeline, baselines, comparación de modelos, evaluación y plan hacia el TF1. El mejor resultado con partición aleatoria no demuestra que el modelo funcione en campañas futuras: la prueba temporal muestra una caída considerable. Los costos de llamadas y el identificador de cliente no están disponibles; por eso todavía no se puede estimar el beneficio económico ni controlar repeticiones por cliente.
 
-**Uso de IA generativa:** se utilizó para apoyar la organización del repositorio, la documentación y la presentación. El grupo debe revisar, comprender y poder sustentar cada decisión y conclusión antes de la entrega.
+**Uso de IA generativa:** se utilizó para apoyar la organización del repositorio, la documentación y la presentación. El grupo revisó, comprende y puede sustentar cada decisión y conclusión del trabajo.
