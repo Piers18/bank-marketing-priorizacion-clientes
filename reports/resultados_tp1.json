@@ -1,0 +1,280 @@
+{
+  "auc_duration": 0.818,
+  "n_filas": 41176,
+  "prevalencia": 0.1127,
+  "tasa_poutcome": {
+    "nonexistent": 0.088,
+    "failure": 0.142,
+    "success": 0.651
+  },
+  "tasa_por_llamadas": {
+    "1": 0.13,
+    "2": 0.115,
+    "3": 0.107,
+    "4": 0.094,
+    "5": 0.075,
+    "6": 0.077,
+    "7": 0.06,
+    "8": 0.043,
+    "9": 0.06,
+    "10": 0.036
+  },
+  "tasa_por_bloque": [
+    0.028,
+    0.035,
+    0.042,
+    0.066,
+    0.062,
+    0.055,
+    0.102,
+    0.12,
+    0.157,
+    0.46
+  ],
+  "euribor_por_bloque": [
+    4.86,
+    4.86,
+    4.94,
+    4.96,
+    4.96,
+    4.85,
+    3.37,
+    1.35,
+    1.26,
+    0.8
+  ],
+  "cv": [
+    {
+      "modelo": "dummy_prior",
+      "pr_auc_media": 0.113,
+      "pr_auc_std": 0.0,
+      "roc_auc_media": 0.5,
+      "roc_auc_std": 0.0
+    },
+    {
+      "modelo": "logistic_regression",
+      "pr_auc_media": 0.446,
+      "pr_auc_std": 0.013,
+      "roc_auc_media": 0.788,
+      "roc_auc_std": 0.011
+    },
+    {
+      "modelo": "random_forest",
+      "pr_auc_media": 0.463,
+      "pr_auc_std": 0.016,
+      "roc_auc_media": 0.793,
+      "roc_auc_std": 0.01
+    },
+    {
+      "modelo": "hist_gradient_boosting",
+      "pr_auc_media": 0.466,
+      "pr_auc_std": 0.015,
+      "roc_auc_media": 0.798,
+      "roc_auc_std": 0.01
+    }
+  ],
+  "validation": [
+    {
+      "modelo": "dummy_prior",
+      "umbral": 0.113,
+      "pr_auc": 0.113,
+      "roc_auc": 0.5,
+      "precision": 0.113,
+      "recall": 1.0,
+      "f1": 0.203,
+      "capture_top20": 0.217
+    },
+    {
+      "modelo": "regla_poutcome_success",
+      "umbral": 0.5,
+      "pr_auc": 0.21,
+      "roc_auc": 0.585,
+      "precision": 0.645,
+      "recall": 0.182,
+      "f1": 0.284,
+      "capture_top20": 0.336
+    },
+    {
+      "modelo": "logistic_regression",
+      "umbral": 0.633,
+      "pr_auc": 0.443,
+      "roc_auc": 0.792,
+      "precision": 0.416,
+      "recall": 0.595,
+      "f1": 0.49,
+      "capture_top20": 0.629
+    },
+    {
+      "modelo": "random_forest",
+      "umbral": 0.618,
+      "pr_auc": 0.473,
+      "roc_auc": 0.797,
+      "precision": 0.456,
+      "recall": 0.595,
+      "f1": 0.516,
+      "capture_top20": 0.648
+    },
+    {
+      "modelo": "hist_gradient_boosting",
+      "umbral": 0.212,
+      "pr_auc": 0.478,
+      "roc_auc": 0.806,
+      "precision": 0.453,
+      "recall": 0.591,
+      "f1": 0.512,
+      "capture_top20": 0.655
+    }
+  ],
+  "test": [
+    {
+      "modelo": "dummy_prior",
+      "umbral": 0.113,
+      "pr_auc": 0.113,
+      "roc_auc": 0.5,
+      "precision": 0.113,
+      "recall": 1.0,
+      "f1": 0.203,
+      "capture_top20": 0.187
+    },
+    {
+      "modelo": "regla_poutcome_success",
+      "umbral": 0.5,
+      "pr_auc": 0.206,
+      "roc_auc": 0.584,
+      "precision": 0.627,
+      "recall": 0.181,
+      "f1": 0.281,
+      "capture_top20": 0.313
+    },
+    {
+      "modelo": "logistic_regression",
+      "umbral": 0.633,
+      "pr_auc": 0.457,
+      "roc_auc": 0.814,
+      "precision": 0.441,
+      "recall": 0.598,
+      "f1": 0.507,
+      "capture_top20": 0.659
+    },
+    {
+      "modelo": "hist_gradient_boosting",
+      "umbral": 0.212,
+      "pr_auc": 0.498,
+      "roc_auc": 0.825,
+      "precision": 0.48,
+      "recall": 0.603,
+      "f1": 0.535,
+      "capture_top20": 0.674
+    }
+  ],
+  "confusion_test": [
+    [
+      5026,
+      455
+    ],
+    [
+      276,
+      420
+    ]
+  ],
+  "ganancia_test": {
+    "logistic_regression": [
+      0.451,
+      0.659,
+      0.74,
+      0.848
+    ],
+    "hist_gradient_boosting": [
+      0.474,
+      0.674,
+      0.747,
+      0.849
+    ]
+  },
+  "temporal": [
+    {
+      "variables": "con macro",
+      "modelo": "logistic_regression",
+      "bloque": "validation",
+      "prevalencia": 0.106,
+      "pr_auc": 0.189,
+      "roc_auc": 0.66,
+      "capture_top20": 0.393
+    },
+    {
+      "variables": "con macro",
+      "modelo": "logistic_regression",
+      "bloque": "test",
+      "prevalencia": 0.384,
+      "pr_auc": 0.439,
+      "roc_auc": 0.567,
+      "capture_top20": 0.224
+    },
+    {
+      "variables": "con macro",
+      "modelo": "hist_gradient_boosting",
+      "bloque": "validation",
+      "prevalencia": 0.106,
+      "pr_auc": 0.131,
+      "roc_auc": 0.56,
+      "capture_top20": 0.254
+    },
+    {
+      "variables": "con macro",
+      "modelo": "hist_gradient_boosting",
+      "bloque": "test",
+      "prevalencia": 0.384,
+      "pr_auc": 0.385,
+      "roc_auc": 0.492,
+      "capture_top20": 0.201
+    },
+    {
+      "variables": "sin macro",
+      "modelo": "logistic_regression",
+      "bloque": "validation",
+      "prevalencia": 0.106,
+      "pr_auc": 0.198,
+      "roc_auc": 0.66,
+      "capture_top20": 0.402
+    },
+    {
+      "variables": "sin macro",
+      "modelo": "logistic_regression",
+      "bloque": "test",
+      "prevalencia": 0.384,
+      "pr_auc": 0.472,
+      "roc_auc": 0.616,
+      "capture_top20": 0.259
+    },
+    {
+      "variables": "sin macro",
+      "modelo": "hist_gradient_boosting",
+      "bloque": "validation",
+      "prevalencia": 0.106,
+      "pr_auc": 0.212,
+      "roc_auc": 0.654,
+      "capture_top20": 0.379
+    },
+    {
+      "variables": "sin macro",
+      "modelo": "hist_gradient_boosting",
+      "bloque": "test",
+      "prevalencia": 0.384,
+      "pr_auc": 0.445,
+      "roc_auc": 0.601,
+      "capture_top20": 0.247
+    }
+  ],
+  "importancia": {
+    "nr.employed": 0.2259,
+    "pdays": 0.0377,
+    "month": 0.0251,
+    "emp.var.rate": 0.0198,
+    "cons.conf.idx": 0.0186,
+    "contact": 0.0174,
+    "euribor3m": 0.0168,
+    "poutcome": 0.0164,
+    "day_of_week": 0.0122,
+    "campaign": 0.0121
+  }
+}
